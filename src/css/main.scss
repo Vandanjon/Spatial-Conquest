@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/textures/bg_space.jpg") no-repeat center / cover;
+}
