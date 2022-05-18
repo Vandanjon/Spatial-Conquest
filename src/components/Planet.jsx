@@ -2,7 +2,7 @@ import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
 import { Html } from "@react-three/drei";
 
-const Planet = ({ size, position, texture, name }) => {
+const Planet = ({ size, position, texture, name, txtpos }) => {
     const textureP = useLoader(TextureLoader, texture);
 
     return (
@@ -11,7 +11,11 @@ const Planet = ({ size, position, texture, name }) => {
                 <sphereGeometry args={[size, 32, 32]} />
                 <meshStandardMaterial map={textureP} />
                 <Html>
-                    <h1>{name}</h1>
+                    <h1
+                        style={{ transform: `translate3d(-50%, ${txtpos}, 0)` }}
+                    >
+                        {name}
+                    </h1>
                 </Html>
             </mesh>
         </>

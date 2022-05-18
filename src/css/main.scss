@@ -24,8 +24,10 @@ main {
 }
 
 main#Screen {
+    width: 100%;
+
     h1 {
-        transform: translate3d(-50%, -200%, 0);
+        transform: translate3d(-50%, -300%, 0);
         background: $tooltip-bg-color;
         color: $text-color;
         padding: 0.2em;
