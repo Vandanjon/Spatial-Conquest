@@ -1,3 +1,9 @@
+//variables
+$tooltip-bg-color: #7676aa;
+$text-color: rgb(7, 6, 20);
+
+//general
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -14,10 +20,16 @@ body {
 
 main {
     width: 80%;
+    height: 100%;
+}
 
+main#Screen {
     h1 {
-        position: fixed;
-        top: 0;
-        color: white;
+        transform: translate3d(-50%, -200%, 0);
+        background: $tooltip-bg-color;
+        color: $text-color;
+        padding: 0.2em;
+        border-radius: 6px;
+        text-transform: capitalize;
     }
 }

@@ -8,14 +8,14 @@ import planets from "@data/planets.json";
 const Screen = () => {
     return (
         <main id="Screen">
-            <h1>{planets[2].name}</h1>
-            <Canvas>
+            <Canvas camera={{ position: [0, 20, 25], fov: 45 }}>
                 <ambientLight />
                 <Star size={2} intensity={5} />
                 <Planet
                     size={planets[2].size}
                     position={planets[2].position}
                     texture={planets[2].texture}
+                    name={planets[2].name}
                 />
             </Canvas>
         </main>

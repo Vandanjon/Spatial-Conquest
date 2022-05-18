@@ -1,7 +1,8 @@
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
+import { Html } from "@react-three/drei";
 
-const Planet = ({ size, position, texture }) => {
+const Planet = ({ size, position, texture, name }) => {
     const textureP = useLoader(TextureLoader, texture);
 
     return (
@@ -9,6 +10,9 @@ const Planet = ({ size, position, texture }) => {
             <mesh position={[position, 0, 0]}>
                 <sphereGeometry args={[size, 32, 32]} />
                 <meshStandardMaterial map={textureP} />
+                <Html>
+                    <h1>{name}</h1>
+                </Html>
             </mesh>
         </>
     );
