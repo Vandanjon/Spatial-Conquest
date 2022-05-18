@@ -1,13 +1,37 @@
+//variables
+$tooltip-bg-color: #7676aa;
+$text-color: rgb(7, 6, 20);
+
+//general
+
 body {
     margin: 0;
     box-sizing: border-box;
 }
 
 #root {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url("../assets/textures/bg_space.jpg") no-repeat center / cover;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    height: 100%;
+}
+
+main#Screen {
+    width: 100%;
+
+    h1 {
+        transform: translate3d(-50%, -300%, 0);
+        background: $tooltip-bg-color;
+        color: $text-color;
+        padding: 0.2em;
+        border-radius: 6px;
+        text-transform: capitalize;
+    }
 }
