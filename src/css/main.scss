@@ -11,3 +11,12 @@ body {
     align-items: center;
     background: url("../assets/textures/bg_space.jpg") no-repeat center / cover;
 }
+
+main {
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        color: white;
+    }
+}
