@@ -1,3 +1,3 @@
 # Conquest
 
-Mini space conquest game made with Reactjs + Sass.
+Mini space conquest game made with Reactjs + Vite + Sass.

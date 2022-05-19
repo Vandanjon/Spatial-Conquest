@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import Star from "../components/Star";
 import Planet from "../components/Planet";
 
-import planets from "../datas/planets.json";
+import planetsDatas from "../datas/planets.jsx";
 
 const Screen = () => {
     return (
@@ -12,7 +12,7 @@ const Screen = () => {
                 <ambientLight />
                 <Star size={3.5} intensity={5} />
 
-                {planets.map((p) => (
+                {planetsDatas.map((p) => (
                     <Planet
                         key={p.id}
                         size={p.size}
