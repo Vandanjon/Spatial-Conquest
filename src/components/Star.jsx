@@ -1,7 +1,7 @@
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
 
-import sunTexture from "@texture/sun.jpg";
+import sunTexture from "../assets/textures/sun.jpg";
 
 const Star = ({ size, intensity }) => {
     const texture = useLoader(TextureLoader, sunTexture);
