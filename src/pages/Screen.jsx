@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 import Star from "../components/Star";
 import Planet from "../components/Planet";
@@ -10,6 +11,7 @@ const Screen = () => {
         <main id="Screen">
             <Canvas camera={{ position: [0, 20, 25], fov: 45 }}>
                 <ambientLight />
+                <OrbitControls />
                 <Star size={3.5} intensity={5} />
 
                 {planetsDatas.map((p) => (
