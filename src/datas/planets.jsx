@@ -1,10 +1,20 @@
+import mercury from "../assets/textures/mercury.jpg";
+import venus from "../assets/textures/venus.jpg";
+import earth from "../assets/textures/earth.jpg";
+import mars from "../assets/textures/mars.jpg";
+import jupiter from "../assets/textures/jupiter.jpg";
+import saturne from "../assets/textures/saturn.jpg";
+import uranus from "../assets/textures/uranus.jpg";
+import neptune from "../assets/textures/neptune.jpg";
+import pluto from "../assets/textures/makemake.jpg";
+
 const planetsDatas = [
     {
         id: 1,
         name: "mercure",
         size: "0.2",
         position: "4",
-        texture: "src/assets/textures/mercury.jpg",
+        texture: mercury,
         txtpos: "-200%",
     },
     {
@@ -12,7 +22,7 @@ const planetsDatas = [
         name: "venus",
         size: "0.45",
         position: "4.9",
-        texture: "src/assets/textures/venus.jpg",
+        texture: venus,
         txtpos: "100%",
     },
     {
@@ -20,7 +30,7 @@ const planetsDatas = [
         name: "terre",
         size: "0.5",
         position: "6",
-        texture: "src/assets/textures/earth.jpg",
+        texture: earth,
         txtpos: "-300%",
     },
     {
@@ -28,7 +38,7 @@ const planetsDatas = [
         name: "mars",
         size: "0.2",
         position: "7",
-        texture: "src/assets/textures/mars.jpg",
+        texture: mars,
         txtpos: "200%",
     },
     {
@@ -36,7 +46,7 @@ const planetsDatas = [
         name: "jupiter",
         size: "2",
         position: "10",
-        texture: "src/assets/textures/jupiter.jpg",
+        texture: jupiter,
         txtpos: "-300%",
     },
     {
@@ -44,7 +54,7 @@ const planetsDatas = [
         name: "saturne",
         size: "2",
         position: "15",
-        texture: "src/assets/textures/saturn.jpg",
+        texture: saturne,
         txtpos: "200%",
     },
     {
@@ -52,7 +62,7 @@ const planetsDatas = [
         name: "uranus",
         size: "1",
         position: "19",
-        texture: "src/assets/textures/uranus.jpg",
+        texture: uranus,
         txtpos: "-300%",
     },
     {
@@ -60,7 +70,7 @@ const planetsDatas = [
         name: "neptune",
         size: "1",
         position: "22",
-        texture: "src/assets/textures/neptune.jpg",
+        texture: neptune,
         txtpos: "200%",
     },
     {
@@ -68,7 +78,7 @@ const planetsDatas = [
         name: "pluton",
         size: "0.2",
         position: "24",
-        texture: "src/assets/textures/makemake.jpg",
+        texture: pluto,
         txtpos: "-300%",
     },
 ];
