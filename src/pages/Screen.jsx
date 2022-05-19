@@ -1,9 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 
-import Star from "@comp/Star";
-import Planet from "@comp/Planet";
+import Star from "../components/Star";
+import Planet from "../components/Planet";
 
-import planets from "@data/planets.json";
+import planets from "../datas/planets.json";
 
 const Screen = () => {
     return (
